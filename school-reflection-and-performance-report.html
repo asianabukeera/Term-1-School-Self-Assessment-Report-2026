@@ -1,1 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School Reflection and Narrative Report Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:#0B4F6C;
+    color:white;
+    padding:60px 30px;
+    text-align:center;
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    font-size:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:-45px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    padding:25px;
+}
+
+.metric{
+    text-align:center;
+}
+
+.metric h2{
+    font-size:40px;
+    color:#0B4F6C;
+}
+
+.metric p{
+    font-weight:bold;
+}
+
+section{
+    margin-top:40px;
+}
+
+section h2{
+    color:#0B4F6C;
+    margin-bottom:15px;
+}
+
+.pillar{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.score{
+    margin-top:10px;
+    font-weight:bold;
+    color:#0B4F6C;
+}
+
+.bar{
+    height:18px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin:8px 0 20px 0;
+}
+
+.fill{
+    height:100%;
+    background:#0B4F6C;
+}
+
+.chart{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom:25px;
+}
+
+.chart-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.chart-label{
+    width:260px;
+    font-weight:bold;
+}
+
+.chart-bar{
+    height:25px;
+    background:#2F80ED;
+    border-radius:5px;
+}
+
+.insight{
+    background:#eef6fa;
+    padding:15px;
+    border-left:5px solid #0B4F6C;
+    margin-top:15px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+footer{
+    background:#0B4F6C;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>School Reflection & Narrative Dashboard</h1>
+
+<p>Term 1 School Self-Assessment Report 2026</p>
+
+</header>
+
+<div class="container">
+
+<div class="dashboard">
+
+<div class="card metric">
+<h2>15+</h2>
+<p>Schools Assessed</p>
+</div>
+
+<div class="card metric">
+<h2>2</h2>
+<p>Regions Covered</p>
+</div>
+
+<div class="card metric">
+<h2>3</h2>
+<p>School Levels</p>
+</div>
+
+<div class="card metric">
+<h2>5</h2>
+<p>Strategic Pillars</p>
+</div>
+
+</div>
+
+<section>
+
+<div class="card">
+
+<h2>Executive Summary</h2>
+
+<p>
+Schools demonstrate strong performance in wellbeing, feeding,
+leadership development and financial accountability.
+Reading culture remains the most commonly reported challenge.
+Community involvement in reading and long-term sustainability planning
+continue to require focused attention.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Dashboard Overview</h2>
+
+<div class="chart">
+
+<h3>Pillar Performance</h3>
+
+<div class="chart-row">
+<div class="chart-label">Safe Schools</div>
+<div class="chart-bar" style="width:85%;"></div>
+</div>
+
+<div class="chart-row">
+<div class="chart-label">Wellbeing & WASH</div>
+<div class="chart-bar" style="width:88%;"></div>
+</div>
+
+<div class="chart-row">
+<div class="chart-label">Reading & Learning</div>
+<div class="chart-bar" style="width:65%;"></div>
+</div>
+
+<div class="chart-row">
+<div class="chart-label">Leadership & Community</div>
+<div class="chart-bar" style="width:78%;"></div>
+</div>
+
+<div class="chart-row">
+<div class="chart-label">Sustainability & Management</div>
+<div class="chart-bar" style="width:72%;"></div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Pillar 1: Safe Schools</h2>
+
+<div class="pillar">
+
+<p>
+Most schools reported child protection focal persons,
+reporting channels, counselling support and referral mechanisms.
+However documentation, periodic review and staff training remain
+inconsistent across schools.
+</p>
+
+<div class="score">
+Performance Score: 85%
+</div>
+
+<div class="bar">
+<div class="fill" style="width:85%;"></div>
+</div>
+
+<div class="insight">
+Strong awareness exists but implementation systems vary in maturity.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Pillar 2: Wellbeing & WASH</h2>
+
+<div class="pillar">
+
+<p>
+School feeding emerged as one of the strongest programme areas.
+Most schools reported regular meals, gardens, hygiene promotion,
+handwashing facilities and health awareness activities.
+</p>
+
+<div class="score">
+Performance Score: 88%
+</div>
+
+<div class="bar">
+<div class="fill" style="width:88%;"></div>
+</div>
+
+<div class="insight">
+School feeding and learner wellbeing are major strengths.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Pillar 3: Reading & Learning</h2>
+
+<div class="pillar">
+
+<p>
+Libraries, reading clubs and reading timetables are increasingly available.
+However schools repeatedly identified weak reading culture and low
+community participation in reading activities.
+</p>
+
+<div class="score">
+Performance Score: 65%
+</div>
+
+<div class="bar">
+<div class="fill" style="width:65%;"></div>
+</div>
+
+<div class="insight">
+Reading culture remains the largest system-wide challenge.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Pillar 4: Leadership & Community</h2>
+
+<div class="pillar">
+
+<p>
+Student leadership, stakeholder meetings and collaborative planning
+have strengthened across many schools. Community participation remains
+active but uneven.
+</p>
+
+<div class="score">
+Performance Score: 78%
+</div>
+
+<div class="bar">
+<div class="fill" style="width:78%;"></div>
+</div>
+
+<div class="insight">
+Leadership systems are developing faster than community engagement.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Pillar 5: Sustainability & Management</h2>
+
+<div class="pillar">
+
+<p>
+Financial systems are improving through budgeting, finance committees
+and accountability mechanisms. Income generating activities remain
+small-scale in many schools.
+</p>
+
+<div class="score">
+Performance Score: 72%
+</div>
+
+<div class="bar">
+<div class="fill" style="width:72%;"></div>
+</div>
+
+<div class="insight">
+Accountability is improving but sustainability remains a concern.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Cross-Cutting Strengths</h2>
+
+<ul>
+<li>School feeding programmes</li>
+<li>Teacher collaboration</li>
+<li>Child protection awareness</li>
+<li>Financial accountability</li>
+<li>Student participation structures</li>
+<li>Leadership development</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Cross-Cutting Challenges</h2>
+
+<ul>
+<li>Reading culture</li>
+<li>Parent engagement in reading</li>
+<li>Library utilisation</li>
+<li>Sustainability planning</li>
+<li>Career guidance</li>
+<li>Infrastructure maintenance</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Priority Recommendations</h2>
+
+<ol>
+
+<li>Strengthen reading culture across schools.</li>
+
+<li>Increase community participation in reading activities.</li>
+
+<li>Diversify school income-generating activities.</li>
+
+<li>Institutionalise child protection documentation and reviews.</li>
+
+<li>Expand career guidance and entrepreneurship programming.</li>
+
+<li>Improve water systems and maintenance planning.</li>
+
+<li>Increase monitoring of implementation quality across pillars.</li>
+
+</ol>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+School Reflection & Narrative Dashboard 2026
+
+</footer>
+
+</body>
+
+</html>
